@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/assets/css/home.css">
+   <!-- <meta name="_csrf" content="${_csrf.token}">
+    <meta name="_csrf_header" content="${_csrf.headerName}"> -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logout-container">
+            <form action="/logout" method="POST" style="display: inline;">
+                <input type="hidden" name="_csrf" th:value="${_csrf.token}" />
+                <button type="submit" class="logout-btn">Log Out</button>
+            </form>
+        </div>
+        <img src="/assets/images/MoodTracker_logo.png" alt="MoodTracker_logo" class="logo">
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <h1>Welcome, <span th:text="${username}">User</span>!</h1>
+
+        <div class="button-container">
+            <button class="floating-btn" onclick="window.location.href='/log-mood'">Log Mood</button>
+            <button class="floating-btn" onclick="window.location.href='/set-goal'">Set Goal</button>
+            <button class="floating-btn" onclick="window.location.href='/self-appreciation'">Self Appreciation</button>
+            <button class="floating-btn" onclick="window.location.href='/gratitude'">Gratitude</button>
+            <button class="floating-btn" onclick="window.location.href='/weekly-mood-analysiss'">Weekly Mood Analysis</button>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        Talk to yourself like you would to someone you love.
+    </footer>
+
+    <script src="/assets/js/home.js"></script>
+</body>
+</html>

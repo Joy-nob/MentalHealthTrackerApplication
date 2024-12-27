@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    text-align: center;
+    background-image: url('/assets/images/log-mood.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+}
+
+.logout-container {
+    margin-left: auto;
+}
+
+.logout-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: #4A4E69;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+main h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: #4A4E69;
+}
+
+/* Buttons Section */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.floating-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.floating-btn:hover {
+    background-color: #45a049;
+}
+
+/* Form Section */
+.form-container {
+    margin-top: 20px;
+    display: none;
+}
+
+.form-container textarea {
+    width: 80%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Scrollable container for moods and notes */
+.list-container {
+    height: 400px;
+    overflow-y: auto;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.list-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.list-item:last-child {
+    border-bottom: none;
+}
+
+/* Footer Section */
+footer {
+    margin-top: 20px;
+    color: #666;
+    font-size: 0.9em;
+}

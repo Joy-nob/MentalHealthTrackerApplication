@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Mood</title>
+    <link rel="stylesheet" href="/assets/css/logMood.css">
+    <meta name="_csrf" content="${_csrf.token}">
+    <meta name="_csrf_header" content="${_csrf.headerName}">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logout-container">
+            <form action="/logout" method="POST" style="display: inline;">
+                <input type="hidden" name="_csrf" th:value="${_csrf.token}" />
+                <button type="submit" class="logout-btn">Log Out</button>
+            </form>
+        </div>
+        <img src="/assets/images/MoodTracker_logo.png" alt="MoodTracker Logo" class="logo">
+    </header>
+
+    <!-- Title Section -->
+    <main>
+        <h1>Log Mood</h1>
+
+        <!-- Buttons Section -->
+        <div class="button-container">
+            <button class="floating-btn" onclick="toggleForm('add-mood')">Add Mood</button>
+            <button class="floating-btn" onclick="toggleForm('add-note')">Add Note</button>
+        </div>
+        
+        <!-- Forms Section -->
+        <div class="form-container" id="add-mood" style="display:none;">
+            <textarea placeholder="Enter your mood here..."></textarea>
+            <button class="floating-btn" onclick="submitMood()">Submit Mood</button>
+        </div>
+        
+        <div class="form-container" id="add-note" style="display:none;">
+            <textarea placeholder="Enter your note here..."></textarea>
+            <button class="floating-btn" onclick="submitNote()">Submit Note</button>
+        </div>
+
+        <!-- List Section -->
+        <div class="list-container">
+            <div class="list-item" th:each="entry : ${entries}">
+                <strong th:text="${entry.date}">2024-12-16</strong>: 
+                <span th:text="${entry.content}">Sample mood or note text</span>
+            </div>
+        </div>
+
+        <!-- Back Button -->
+        <div>
+            <button class="floating-btn" onclick="window.location.href='/back-to-home'">Back to Home</button>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        Talk to yourself like you would to someone you love.
+    </footer>
+    
+    <script src="/assets/js/log-mood.js"></script>
+</body>
+</html>

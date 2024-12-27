@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    background-image: url('/assets/images/background.jpeg');
+    background-size: 50%;
+    background-position: center;
+    background-attachment: fixed;
+    color: black;
+    position: relative;
+}
+
+/* Logout Button */
+.logout-container {
+    position: relative;
+    top: 20px;
+    right: 20px;  /* Position to the top-right */
+    z-index: 10;  /* Ensure the logout button stays on top */
+}
+
+.logout-btn {
+    font-family: 'Merriweather', serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    color: red;
+    border-color: red;
+}
+
+/* Header Section */
+header {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding: 0;
+    z-index: 5;  /* Ensure header is behind the logout button */
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+/* Main Content */
+main {
+    text-align: center;
+    padding: 3px 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 50px;
+    color: #333;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Floating Buttons */
+.floating-btn {
+    position: absolute;
+    padding: 15px 30px;
+    background-color: transparent;
+    border: 2px solid #333;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: transform 0.3s ease, opacity 0.3s ease, left 2s ease-in-out, top 2s ease-in-out;
+}
+
+.floating-btn:hover {
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+/* Fade effect when buttons overlap */
+.floating-btn.fade {
+    opacity: 0;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 25px 0;
+    font-size: 1.5em;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    font-style: italic;
+    color: #555;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+/* Add responsiveness for mobile screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    .floating-btn {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}

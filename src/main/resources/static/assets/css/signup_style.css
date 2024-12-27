@@ -1,0 +1,103 @@
+/* CSS */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    background-image: url('/assets/images/sign_image.jpeg');
+    background-size: 100%; /* Zoomed out background */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: black;
+}
+
+/* Header Section */
+header {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding-top: 20px; /* Adjust header height */
+}
+
+.signup-header {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.signup-form {
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent background for form */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+label {
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button Styles */
+.signup-btn {
+    font-size: 1.2em;
+    padding: 10px 30px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.signup-btn:hover {
+    background-color: green;
+    color: white;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+	padding: 25px 0;
+	  font-size: 1.5em; /* Footer font size */
+	  position: fixed;
+	  bottom: 10px; /* Moved footer lower */
+	  width: 100%;
+	  font-style: italic; /* Italicized text */
+	  color: #555; /* Darker color for footer text */
+	  text-transform: uppercase; /* Capitalized text for emphasis */
+	  background-color: transparent;  /* Removed the white background */
+}

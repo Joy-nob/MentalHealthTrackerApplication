@@ -1,0 +1,75 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    background-image: url('/assets/images/background.jpeg');
+    background-size: 50%;  /* Zoomed out the background to 150% */
+    background-position: center;
+    background-attachment: fixed;
+    color: black;
+}
+
+/* Header Section */
+header {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding: 0;
+}
+
+.logo {
+    width: 120px;  /* Smaller logo size */
+    height: auto;
+}
+
+/* Main Content */
+main {
+    text-align: center;
+    padding: 3px 20px;  /* Increased padding-top to move content down */
+}
+
+h1 {
+    font-size: 3em;  /* Larger heading */
+    margin-bottom: 50px;
+    color: #333;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styles */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    font-size: 1.5em;
+    padding: 15px 40px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid #333;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 25px 0;
+    font-size: 1.5em; /* Footer font size */
+    position: fixed;
+    bottom: 10px; /* Moved footer lower */
+    width: 100%;
+    font-style: italic; /* Italicized text */
+    color: #555; /* Darker color for footer text */
+    text-transform: uppercase; /* Capitalized text for emphasis */
+    background-color: transparent;  /* Removed the white background */
+}

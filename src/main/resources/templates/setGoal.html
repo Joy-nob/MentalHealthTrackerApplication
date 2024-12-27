@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Goal</title>
+    <link rel="stylesheet" href="/assets/css/setGoal.css">
+    <meta name="_csrf" content="${_csrf.token}">
+    <meta name="_csrf_header" content="${_csrf.headerName}">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="/assets/images/MoodTracker_logo.png" alt="MoodTracker_logo" class="logo">
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <h1 class="page-title">Set Goal</h1>
+
+        <!-- Goal Form Section -->
+        <section class="goal-form">
+            <h3>What do you want to achieve?</h3>
+            <input type="text" id="goalTitle" placeholder="Enter goal title here" required>
+
+            <h3>Set Time Limit</h3>
+            <input type="number" id="goalDays" placeholder="Enter number of days" min="1" required>
+            
+            <div class="goal-actions">
+                <button class="floating-btn" onclick="addGoal()">Add Goal</button>
+                <button class="floating-btn" onclick="window.location.href='/home'">Back</button>
+            </div>
+        </section>
+
+        <!-- Previous Goals Section -->
+        <section class="previous-goals">
+            <h3>Previous Goals</h3>
+            <div class="goal-list" id="goalList">
+                <!-- More goals will be added here dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        Every goal, no matter how small, is a step forward. Celebrate your progress and be kind to yourself, even if things take time.
+    </footer>
+
+    <script src="/assets/js/setGoal.js"></script>
+</body>
+</html>

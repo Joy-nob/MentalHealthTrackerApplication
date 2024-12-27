@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    background-image: url('/assets/images/graph.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2.5em;
+    color: #4A4E69;
+}
+
+/* Graph Section */
+.graph-container {
+    width: 80%;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mood Summary Section */
+.mood-summary {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.mood-summary h2 {
+    font-size: 2em;
+    color: #4A4E69;
+}
+
+/* Action Section */
+.action-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.action-btn {
+    padding: 12px 20px;
+    background-color: #22223B;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #4A4E69;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-style: italic;
+    color: #555;
+}

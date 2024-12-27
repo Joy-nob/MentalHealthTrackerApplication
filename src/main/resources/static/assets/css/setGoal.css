@@ -1,0 +1,103 @@
+/* Set Goal Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/assets/images/setGoal.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.page-title {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 2.5rem;
+    color: rgb(64, 0, 64);
+}
+
+main {
+    margin-top: 150px;
+    padding: 20px;
+}
+
+.goal-form {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.goal-form input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.goal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.floating-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.floating-btn:hover {
+    background-color: #45a049;
+}
+
+.previous-goals {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.goal-list {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+.goal-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+    font-size: 0.9rem;
+}
