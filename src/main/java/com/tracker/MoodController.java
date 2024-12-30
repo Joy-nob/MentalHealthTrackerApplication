@@ -23,7 +23,7 @@ public class MoodController {
 	}
 
 	@PostMapping("/add-mood") // Adds a new mood log
-	public String addMood(@RequestParam("mood") String mood, @RequestParam("notes") String notes) {
+	public String addMood(@RequestParam String mood, @RequestParam String notes) {
 		MoodLogs newMoodLog = new MoodLogs(mood, 0, notes, LocalDateTime.now(), null);
 		moodLogsRepository.save(newMoodLog);
 		return "redirect:/log-mood"; // Redirect to mood list after adding

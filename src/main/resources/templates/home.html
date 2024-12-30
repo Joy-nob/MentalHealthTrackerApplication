@@ -25,12 +25,13 @@
     <main>
         <h1>Welcome, <span th:text="${username}">User</span>!</h1>
 
-        <div class="button-container">
-            <button class="floating-btn" onclick="window.location.href='/log-mood'">Log Mood</button>
-            <button class="floating-btn" onclick="window.location.href='/set-goal'">Set Goal</button>
-            <button class="floating-btn" onclick="window.location.href='/self-appreciation'">Self Appreciation</button>
-            <button class="floating-btn" onclick="window.location.href='/gratitude'">Gratitude</button>
-            <button class="floating-btn" onclick="window.location.href='/weekly-mood-analysiss'">Weekly Mood Analysis</button>
+        <div 
+		<a class="floating-btn" th:href="@{/log-mood}">Log Mood</a>
+		<a class="floating-btn" th:href="@{/set-goal}">Set Goal</a>
+		<a class="floating-btn" th:href="@{/self-appreciation}">Self Appreciation</a>
+		<a class="floating-btn" th:href="@{/gratitude}">Gratitude</a>
+		<a class="floating-btn" th:href="@{/weekly-mood-analysis}">Weekly Mood Analysis</a>
+
         </div>
     </main>
 
